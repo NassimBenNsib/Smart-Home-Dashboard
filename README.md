@@ -20,9 +20,8 @@
 
 <a href="https://wokwi.com/projects/354317326935098369" >Master Bedroom</a>
 
-<img src="https://github.com/nassim-bnb/iot/blob/main/sc1.png">
-<img src="https://github.com/nassim-bnb/iot/blob/main/sc2.png">
-<img src="https://github.com/nassim-bnb/iot/blob/main/sc3.png">
-<img src="https://github.com/nassim-bnb/iot/blob/main/off.png">
+<img src="https://github.com/NassimBenNsib/uDashboard/blob/main/sc1.png">
+<img src="https://github.com/NassimBenNsib/uDashboard/blob/main/sc2.png">
+<img src="https://github.com/NassimBenNsib/uDashboard/blob/main/sc3.png">
+<img src="https://github.com/NassimBenNsib/uDashboard/blob/main/off.png">
 
-<img src="https://github.com/nassim-bnb/iot/blob/main/qr-code.png">
