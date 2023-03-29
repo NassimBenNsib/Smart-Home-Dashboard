@@ -1,0 +1,81 @@
+.FeatureCard {
+  border-radius: 20px;
+  padding: 20px 25px;
+  min-width: 150px;
+  max-width: 100%;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.4s ease-in-out;
+  background-color: #121220;
+}
+
+.FeatureCard > .title {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.FeatureCard > .status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.FeatureCard > .status > .button {
+  width: 40px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: #7a40f2;
+  cursor: pointer;
+}
+
+.FeatureCard > .status > .button > .circle {
+  height: 25px;
+  width: 25px;
+  margin-left: 20px;
+  border-radius: 50px;
+  background-color: aliceblue;
+  transition: all 0.5s ease-in-out;
+}
+
+.FeatureCard[is-active="false"] > .status > .button {
+  background-color: #8a90b8;
+}
+
+.FeatureCard[is-active="false"] > .status > .button > .circle {
+  margin-left: -5px;
+}
+
+.FeatureCard[is-active="false"] {
+  background-color: transparent;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  box-shadow: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.281);
+}
+
+@media screen and (max-width: 1520px) {
+  .FeatureCard {
+    max-width: none;
+    min-width: none;
+    width: 18%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .FeatureCard {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .FeatureCard {
+    width: 38%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .FeatureCard {
+    width: 95%;
+  }
+}

@@ -1,0 +1,88 @@
+.DeviceCard {
+  border-radius: 20px;
+  padding: 20px 25px;
+  min-width: 150px;
+  width: 40%;
+  max-width: 100%;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid #121212;
+
+  /* background-color: var(--color1); */
+  background-image: linear-gradient(
+    to bottom right,
+    var(--color1),
+    var(--color2)
+  );
+}
+
+.DeviceCard > .title {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.DeviceCard > .status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.DeviceCard > .status > .button {
+  width: 48px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.DeviceCard > .status > .button > .circle {
+  height: 23px;
+  width: 23px;
+  margin-left: 22px;
+  margin-top: 1px;
+  border-radius: 50px;
+  background-color: var(--color1);
+  transition: all 0.5s ease-in-out;
+}
+
+.DeviceCard[is-active="false"] > .status > .button {
+  background-color: #8a90b8;
+}
+
+.DeviceCard[is-active="false"] > .status > .button > .circle {
+  margin-left: 2px;
+  background-color: rgb(34, 34, 34);
+}
+
+.DeviceCard[is-active="false"] {
+  background-color: transparent;
+  filter: grayscale(100%);
+  box-shadow: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.281);
+  background-image: none;
+}
+
+@media screen and (max-width: 1520px) {
+  .DeviceCard {
+    max-width: none;
+    min-width: none;
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .DeviceCard {
+    max-width: none;
+    min-width: none;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .DeviceCard {
+    max-width: none;
+    min-width: none;
+    width: 95%;
+  }
+}

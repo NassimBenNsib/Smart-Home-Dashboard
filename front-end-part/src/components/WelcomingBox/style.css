@@ -1,0 +1,58 @@
+.WelcomingBox {
+  border-radius: 20px;
+  padding: 5px 30px 10px 30px;
+  /* background-image: url("./assets/bg.svg"); */
+  /* background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: top right; */
+}
+
+.WelcomingBox > h1 {
+  font-size: 30px;
+}
+
+.WelcomingBox > p {
+  font-size: 15px;
+  /* max-width: 400px; */
+  line-height: 25px;
+  color: #8da1c0;
+}
+
+.WelcomingBox > .info {
+  margin-top: -20px;
+  margin-left: 5px;
+  color: white;
+}
+
+.WelcomingBox > .quote-container .quote {
+  line-height: 30px;
+}
+
+.WelcomingBox > .weather-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 25px;
+  margin-top: -20px;
+  position: relative;
+}
+.WelcomingBox > .weather-container > p {
+  cursor: pointer;
+}
+.WelcomingBox > .weather-container > .weather-widget {
+  position: absolute;
+  top: 100px;
+  right: -30px;
+  transition: all 0.7s ease-in;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.WelcomingBox > .weather-container > img {
+  cursor: pointer;
+}
+.WelcomingBox > .weather-container > img:hover + .weather-widget,
+.WelcomingBox > .weather-container .weather-widget:hover {
+  top: -100px;
+  opacity: 1;
+}

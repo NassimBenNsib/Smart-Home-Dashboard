@@ -1,0 +1,22 @@
+.update-weather-statistics-container {
+  text-align: center;
+  margin: auto;
+}
+.update-weather-statistics-container > button {
+  padding: 20px;
+  background-color: transparent;
+  color: white;
+  font-weight: bolder;
+  border: 1px solid white;
+  cursor: pointer;
+  margin: auto;
+  width: 300px;
+  max-width: 100%;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.update-weather-statistics-container > button:hover {
+  color: #121220;
+  background-color: wheat;
+}

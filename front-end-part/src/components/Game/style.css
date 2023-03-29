@@ -1,0 +1,22 @@
+.try-again-btn {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  user-select: none;
+  border: 1px solid wheat;
+  border-radius: 50px;
+  padding: 8px;
+}
+
+.try-again-btn:hover {
+  background-color: white;
+  color: #121220;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  #Game {
+    scale: 0.8;
+    transform: translateY(-150px);
+  }
+}

@@ -1,0 +1,85 @@
+.RoomsDetails {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.RoomsDetails > .header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: max(16px, 1.5vw);
+  padding: 0;
+}
+.RoomsDetails > .header > :not(.measure) {
+  margin-right: auto;
+}
+
+.RoomsDetails > .header > .measure {
+  display: flex;
+  align-items: center;
+}
+
+.RoomsDetails > .rooms {
+  margin-left: auto;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.RoomsDetails > .rooms > .room {
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 10px 12px;
+
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px 12px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.RoomsDetails > .rooms > .room[is-selected="true"] {
+  cursor: pointer;
+  background-color: white;
+  color: #121220;
+  border-radius: 50px;
+  padding: 10px 12px;
+  box-shadow: 0px 0px 10px white;
+
+  background-color: #242441;
+  box-shadow: 0 2px 5px rgb(36 36 65 / 30%);
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px 12px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.RoomsDetails > .rooms > .room:hover {
+  /* box-shadow: 0px 0px 10px white; */
+  background-color: rgb(36 36 65);
+}
+
+.RoomsDetails > .features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+  gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .RoomsDetails .label {
+    display: none;
+  }
+  .RoomsDetails > .header {
+    justify-content: space-evenly;
+  }
+}

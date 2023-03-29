@@ -1,0 +1,120 @@
+.MeasuringCard {
+  border-radius: 20px;
+  padding: 20px 25px;
+  margin-top: 25px;
+  transition: all 0.5s ease-in;
+}
+
+.MeasuringCard[is-active="false"] {
+  filter: blur(10px) grayscale(80%);
+}
+
+.MeasuringCard > .header {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 32px 0;
+}
+
+.MeasuringCard > .header > img {
+  width: 50px;
+  margin-right: 20px;
+}
+.MeasuringCard > .meter-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px 0;
+}
+.MeasuringCard > .meter-container > button {
+  font-size: 25px;
+  line-height: 25px;
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(#9d39da, #740b82);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 100;
+  margin-top: -25px;
+}
+.MeasuringCard > .meter-container > button:nth-last-of-type(1) {
+  margin-right: -120px;
+}
+.MeasuringCard > .meter-container > button:nth-last-of-type(2) {
+  margin-left: -120px;
+}
+
+.MeasuringCard > .meter-container > .meter {
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid #454778;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 100px 0 120px 0;
+  scale: 1.25;
+  /* box-shadow: 0 0 0 5px #121220,0 0 5px 3px white, 0 0 0 10px #121220,0 0 10px 7px white; */
+  box-shadow: 0 0 0 5px #121220, 0 0 5px 10px white;
+}
+
+.MeasuringCard > .meter-container > .meter > .value {
+  font-size: 35px;
+}
+
+.MeasuringCard > .meter-container > .meter > .unit {
+  font-size: 15px;
+  color: #454778;
+}
+
+.MeasuringCard > .meter-container > .meter > .line {
+  width: 1px;
+  height: 10px;
+  background-color: var(--background-color);
+  position: absolute;
+  top: var(--top);
+  transform-origin: var(--transform-origin);
+  rotate: calc(calc(360 / var(--number)) * var(--rotation) * 1deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.MeasuringCard > .meter-container > .meter > .line:nth-of-type(1),
+.MeasuringCard > .meter-container > .meter > .line:nth-of-type(10),
+.MeasuringCard > .meter-container > .meter > .line:nth-of-type(19),
+.MeasuringCard > .meter-container > .meter > .line:nth-of-type(28) {
+  height: 20px;
+  width: 2px;
+  top: -70px;
+  transform-origin: 1px 145px;
+}
+
+@media screen and (max-width: 500px) {
+  .MeasuringCard > .meter-container {
+    position: relative;
+    margin: 50px 0px 30px 0px;
+  }
+  .MeasuringCard > .meter-container > button:nth-of-type(2) {
+    position: absolute;
+    margin: 0;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .MeasuringCard > .meter-container > button:nth-of-type(1) {
+    position: absolute;
+    margin: 0;
+    bottom: -40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .MeasuringCard > .meter-container > .meter > .line:not(.gradient) {
+    position: absolute;
+    top: -40px;
+    transform-origin: 1px 115px;
+  }
+}

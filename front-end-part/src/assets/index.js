@@ -1,0 +1,16 @@
+export { default as TemperatureIcon } from "./temperature.png";
+export { default as Temperature2Icon } from "./temperature-2.png";
+export { default as Temperature3Icon } from "./temperature-3.png";
+export { default as HumidityIcon } from "./humidity.png";
+export { default as AirConditionerIcon } from "./air.png";
+export { default as LightsIcon } from "./light.png";
+export { default as MusicIcon } from "./music.png";
+export { default as CloudIcon } from "./cloud.png";
+export { default as TelevisionIcon } from "./tv.png";
+export { default as RouterIcon } from "./router.png";
+export { default as RadioIcon } from "./radio.png";
+export { default as LampsOutdoorIcon } from "./lamp.png";
+export { default as AntiTheftSystemIcon } from "./alarm.png";
+export { default as FireDetectionSystemIcon } from "./fire.png";
+export { default as RefrigeratorIcon } from "./fridge.png";
+export { default as MicrowaveIcon } from "./microwave.png";
